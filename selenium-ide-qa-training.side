@@ -1,0 +1,413 @@
+{
+  "id": "f64cc6f6-48d7-4cb5-ab55-311b63a62d66",
+  "version": "2.0",
+  "name": "qa-training",
+  "url": "https://weathershopper.pythonanywhere.com",
+  "tests": [{
+    "id": "2556cd4e-c2c2-4614-98af-7c0fb30a93a9",
+    "name": "test-card-payment",
+    "commands": [{
+      "id": "892a7f1c-0981-4abb-9b9b-260b3ee96e70",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1df88637-02a8-4d80-8873-619ed45b80fc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x790",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78759f03-422e-4559-92d1-12ad5079f264",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(1) .btn",
+      "targets": [
+        ["css=.text-center:nth-child(1) .btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buy moisturizers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a08964b0-8965-49d2-8d2b-7b13fee45d08",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(2) > .text-center:nth-child(3) > .btn",
+      "targets": [
+        ["css=.row:nth-child(2) > .text-center:nth-child(3) > .btn", "css:finder"],
+        ["xpath=//button[@onclick=\"addToCart('Emmanuel Aloe Vera Beauty Gel',299)\"]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c0e9f29-2cea-4393-8451-8f16b048c962",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(5) > .btn",
+      "targets": [
+        ["css=.text-center:nth-child(5) > .btn", "css:finder"],
+        ["xpath=//button[@onclick=\"addToCart('Wilhelm Aloe Hydration Lotion',365)\"]", "xpath:attributes"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbf58714-6423-48ec-806b-6b9510bc14c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.thin-text",
+      "targets": [
+        ["css=.thin-text", "css:finder"],
+        ["xpath=//button[@onclick='goToCart()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cart - 2 item(s)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d223abea-c096-4f4c-9209-8e9ba1053f6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(1)",
+      "targets": [
+        ["css=span:nth-child(1)", "css:finder"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Pay with Card')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "954e98ed-fcaa-4b5e-81fe-5fe23bb471a0",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "89c6a151-30b3-443f-89d0-1d74c8087c33",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60fc041f-56b9-472a-86ba-72bbf82b9f5d",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testemail@example.com"
+    }, {
+      "id": "c19e9253-098a-458a-938e-ddd4abe53ea9",
+      "comment": "",
+      "command": "click",
+      "target": "id=card_number",
+      "targets": [
+        ["id=card_number", "id"],
+        ["css=#card_number", "css:finder"],
+        ["xpath=//input[@id='card_number']", "xpath:attributes"],
+        ["xpath=//div/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d5c21c5-d481-4d79-a1f9-7d95a6c7fbc1",
+      "comment": "",
+      "command": "type",
+      "target": "id=card_number",
+      "targets": [
+        ["id=card_number", "id"],
+        ["css=#card_number", "css:finder"],
+        ["xpath=//input[@id='card_number']", "xpath:attributes"],
+        ["xpath=//div/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "4242 4242 4242 4242"
+    }, {
+      "id": "6c3963ce-75e4-485b-9688-192bbb4b0697",
+      "comment": "",
+      "command": "click",
+      "target": "id=cc-exp",
+      "targets": [
+        ["id=cc-exp", "id"],
+        ["css=#cc-exp", "css:finder"],
+        ["xpath=//input[@id='cc-exp']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c504acb-487d-4c74-98c2-6a3935fe6d28",
+      "comment": "",
+      "command": "type",
+      "target": "id=cc-exp",
+      "targets": [
+        ["id=cc-exp", "id"],
+        ["css=#cc-exp", "css:finder"],
+        ["xpath=//input[@id='cc-exp']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12 / 28"
+    }, {
+      "id": "18efd8cd-be02-42f0-abbe-73189cbd6600",
+      "comment": "",
+      "command": "click",
+      "target": "id=cc-csc",
+      "targets": [
+        ["id=cc-csc", "id"],
+        ["css=#cc-csc", "css:finder"],
+        ["xpath=//input[@id='cc-csc']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d115f8b7-4a9d-4a83-88e6-6f48d457e3a6",
+      "comment": "",
+      "command": "type",
+      "target": "id=cc-csc",
+      "targets": [
+        ["id=cc-csc", "id"],
+        ["css=#cc-csc", "css:finder"],
+        ["xpath=//input[@id='cc-csc']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "1345e483-ee60-467f-9aff-ce1a98e9341b",
+      "comment": "",
+      "command": "click",
+      "target": "id=billing-zip",
+      "targets": [
+        ["id=billing-zip", "id"],
+        ["name=zip", "name"],
+        ["css=#billing-zip", "css:finder"],
+        ["xpath=//input[@id='billing-zip']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "837c67b5-f6fa-4645-b48a-cba2aa02d1f9",
+      "comment": "",
+      "command": "type",
+      "target": "id=billing-zip",
+      "targets": [
+        ["id=billing-zip", "id"],
+        ["name=zip", "name"],
+        ["css=#billing-zip", "css:finder"],
+        ["xpath=//input[@id='billing-zip']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "56111"
+    }, {
+      "id": "5ff11fd2-e9c0-47aa-b284-fe8409b6e51b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iconTick",
+      "targets": [
+        ["css=.iconTick", "css:finder"],
+        ["xpath=//button[@id='submitButton']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9b647d08-d96e-41ae-91cf-a911c089ad2c",
+    "name": "check-temperature-if-else-example",
+    "commands": [{
+      "id": "021c6e7a-57ac-428d-95ab-320c7d708136",
+      "comment": "",
+      "command": "open",
+      "target": "https://weathershopper.pythonanywhere.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9f750a3-1641-49ea-baa8-386f711bc088",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=temperature",
+      "targets": [],
+      "value": "temperatureVar"
+    }, {
+      "id": "ad72cbc1-65f7-4307-87e8-6d88c074f15b",
+      "comment": "",
+      "command": "echo",
+      "target": "${temperatureVar}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6dff7eb3-1d01-4cf6-86cf-7c56591e9a07",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${temperatureVar}.split(' ')[0];",
+      "targets": [],
+      "value": "temperatureVar"
+    }, {
+      "id": "180e9ede-8267-454d-8b7e-8b3fe5c1da05",
+      "comment": "",
+      "command": "echo",
+      "target": "${temperatureVar}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7026e0ee-81b0-48d8-9232-8e328a4830f2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return parseInt(${temperatureVar}, 10);",
+      "targets": [],
+      "value": "temperatureVar"
+    }, {
+      "id": "24f684cb-28b5-48c2-b68c-218c761c2a4d",
+      "comment": "",
+      "command": "echo",
+      "target": "${temperatureVar}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a5d67214-a58d-4b3e-bd30-4fecff843f54",
+      "comment": "",
+      "command": "if",
+      "target": "${temperatureVar}>19",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d19c64e0-3859-4b3a-af71-1d9e98bf4225",
+      "comment": "",
+      "command": "echo",
+      "target": "Temperature was above 19 C. You can have this test 'Click' the 'Buy sunscreen' button here.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb040be4-cbec-4e05-84ac-31a9e1941f16",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${temperatureVar}>19;",
+      "targets": [],
+      "value": "temperatureIsGreaterThan19"
+    }, {
+      "id": "30674e8e-6106-4978-a597-bcffa4a1d7c0",
+      "comment": "",
+      "command": "echo",
+      "target": "${temperatureIsGreaterThan19}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38816c8c-211a-4f14-9a6e-177a64d503f8",
+      "comment": "",
+      "command": "assert",
+      "target": "temperatureIsGreaterThan19",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "f1b19a75-1f1b-4478-9d66-513af5312df3",
+      "comment": "",
+      "command": "elseIf",
+      "target": "${temperatureVar}<=19",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7cb012a-00db-482d-b61f-94cbc145c474",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${temperatureVar}<=19;",
+      "targets": [],
+      "value": "temperatureIsLessThanOrEqualTo19"
+    }, {
+      "id": "f81822f7-7321-4aec-8ab5-f83838bf096f",
+      "comment": "",
+      "command": "echo",
+      "target": "Temperature was below or equal to 19 C. You can have this test 'Click' the 'Buy moisturizers' button here.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09b5d9b3-6c59-4876-b146-31b12d9ec5ef",
+      "comment": "",
+      "command": "echo",
+      "target": "${temperatureIsLessThanOrEqualTo19}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53a60025-646f-44e0-b848-bf8b41090f9b",
+      "comment": "",
+      "command": "assert",
+      "target": "temperatureIsLessThanOrEqualTo19",
+      "targets": [],
+      "value": "true"
+    }, {
+      "id": "e542a5ac-ad09-4632-9817-afde6b5ab865",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4bb2396-ff67-4adb-bcff-cc91695cc5b1",
+      "comment": "",
+      "command": "echo",
+      "target": "Something weird happened, and Temperature neither above nor below/equal to 19 C.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7725f1cb-5d11-4767-bda8-c6555cc3beb3",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "99ac5d18-2b69-4083-aba3-0010a2d529e2",
+    "name": "click-buy-sunscreens-button-example",
+    "commands": [{
+      "id": "5b150ae0-37c6-4bea-9eef-3f7f1944eb0b",
+      "comment": "",
+      "command": "open",
+      "target": "https://weathershopper.pythonanywhere.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "283966a3-96c5-4204-9918-2663b59aeb6c",
+      "comment": "",
+      "command": "click",
+      "target": "//button[text()='Buy sunscreens']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c066d5c0-10bb-4efc-a903-3293f4e4977a",
+    "name": "click-buy-moisturizers-button-example",
+    "commands": [{
+      "id": "cf6bb163-320d-45b3-9a53-79e6aaf0311a",
+      "comment": "",
+      "command": "open",
+      "target": "https://weathershopper.pythonanywhere.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "336569d8-a974-4c65-b344-fcf27940a249",
+      "comment": "",
+      "command": "click",
+      "target": "//button[text()='Buy moisturizers']",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "36baeb2c-266b-4724-acbf-29c76a22bdd5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://weathershopper.pythonanywhere.com/"],
+  "plugins": []
+}
